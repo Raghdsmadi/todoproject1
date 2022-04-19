@@ -9,12 +9,13 @@ for (  i=0 ; age <= 0; i++){
     var age = window.prompt("Enter your Age: ");
 }
 
+//result = window.confirm("Do you want to skip welcome message ?");
 
-
-var conf=  window.prompt("Do you want to skip welcome message ? please enter yes or no");
-if(conf== 'no')
-{//alert ("Do you want to skip welcome message ? ")
- if (gender == 'male')
+//var conf=  window.prompt("Do you want to skip welcome message ? please enter yes or no");
+/*var result =window.confirm("Do you want to skip welcome message");
+if (result = 0){*/
+//alert ("Do you want to skip welcome message ? ")
+ /*if (gender == 'male')
         {
             alert("Welcome, MR. " + name );
 
@@ -26,7 +27,26 @@ if(conf== 'no')
         } else {
             alert("Welcome, " + name );
         }
-    }
+*/
+        if (window.confirm("Do you want to skip welcome message") == false) {
+            if (gender == 'male')
+            {
+                alert("Welcome, MR. " + name );
+    
+            }
+            else if (gender == 'female')
+            {
+                alert("Welcome, MS. " + name);
+    
+            } else {
+                alert("Welcome, " + name );
+            }
+    
+          } else {
+            
+          }
+  
+
 
 
 
