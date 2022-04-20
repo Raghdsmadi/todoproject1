@@ -28,23 +28,19 @@ if (result = 0){*/
             alert("Welcome, " + name );
         }
 */
-        if (window.confirm("Do you want to skip welcome message") == false) {
+
+if (window.confirm("Do you want to skip welcome message") == false)
+ {
             if (gender == 'male')
             {
-                alert("Welcome, MR. " + name );
-    
-            }
+                alert("Welcome, MR. " + name );  }
             else if (gender == 'female')
             {
-                alert("Welcome, MS. " + name);
+                alert("Welcome, MS. " + name); } 
+            else {
+                alert("Welcome, " + name );  }
     
-            } else {
-                alert("Welcome, " + name );
-            }
-    
-          } else {
-            
-          }
+  } 
   
 
 
